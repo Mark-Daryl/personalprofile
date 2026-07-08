@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hide loading screen
     const loader = document.getElementById('loader');
     if (loader) {
-        setTimeout(() => {
+        setTimeout(() => { 
             loader.classList.add('hidden');
         }, 800);
     }
