@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-:root {
+:root { 
     --primary: #6c63ff;
     --primary-dark: #5a52d5;
     --primary-light: #8b83ff;
