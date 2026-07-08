@@ -3,109 +3,170 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mark Daryl S. Hidalgo - Personal Profile</title>
+    <meta name="description" content="Mark Daryl S. Hidalgo - Professional Web Developer & UI/UX Designer Portfolio" />
+    <meta name="keywords" content="Web Developer, UI/UX Designer, Portfolio, Mark Daryl Hidalgo" />
+    <meta name="author" content="Mark Daryl S. Hidalgo" />
+    <title>Mark Daryl S. Hidalgo - Professional Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="#home">Mark Daryl S. Hidalgo </a>
+                <a href="#home">MD<span>.</span></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Profile Picture -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight">Mark Daryl S. Hidalgo </span></h1>
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Available for Freelance
+                </div>
+                <h1>Hi, I'm <span class="highlight">Mark Daryl</span></h1>
                 <p class="typing-text">I'm a <span id="typed-text"></span></p>
                 <p class="hero-description">
-                    Passionate developer creating amazing web experiences.
-                    Building the future, one line of code at a time.
+                    Passionate developer crafting beautiful, responsive, and user-centric web experiences.
+                    Turning complex problems into elegant solutions with clean code.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-code"></i> View Work
+                    </a>
+                    <a href="#" class="btn btn-outline" id="resume-btn">
+                        <i class="fas fa-file-pdf"></i> Resume
+                    </a>
                 </div>
                 <div class="social-icons">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
-                    <!-- REPLACE 'profile.jpg' WITH YOUR IMAGE FILE NAME -->
-                    <img src="1.jpg" alt="Your Name" class="profile-pic" />
+                    <img src="1.jpg" alt="Mark Daryl S. Hidalgo" class="profile-pic" />
                     <div class="image-overlay">
-                        <span>👋 Hi there!</span>
+                        <span>👋 Welcome!</span>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-code"></i>
+                        <span>Web Dev</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>UI/UX</span>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text fade-in">
                     <h3>Who I Am</h3>
                     <p>
-                        I'm a passionate developer with a love for creating
-                        beautiful and functional web applications. With expertise
-                        in modern web technologies, I strive to build solutions
-                        that make a difference.
+                        I'm a passionate <strong>Web Developer</strong> and <strong>UI/UX Designer</strong> 
+                        with a love for creating beautiful, functional, and user-friendly digital experiences. 
+                        With over a year of hands-on experience, I specialize in building responsive web 
+                        applications using modern technologies.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with creative problem-solving, ensuring 
+                        every project I work on not only looks great but also delivers exceptional user 
+                        experience. I believe in writing clean, maintainable code and staying updated 
+                        with the latest industry trends.
                     </p>
                     <div class="info-grid">
                         <div class="info-item">
-                            <span class="label">Name:</span>
-                            <span class="value">Mark Daryl S. Hidalgo </span>
+                            <span class="label"><i class="fas fa-user"></i> Name:</span>
+                            <span class="value">Mark Daryl Hidalgo</span>
                         </div>
+
+                         <div class="info-item">
+                            <span class="label"><i class="fas fa-user"></i> GitHub:</span>
+                            <span class="value">github.com/Mark-Daryl</span>
+                        </div>
+
+
                         <div class="info-item">
-                            <span class="label">Location:</span>
+                            <span class="label"><i class="fas fa-map-marker-alt"></i> Location:</span>
                             <span class="value">Naguilian, La Union, Philippines</span>
                         </div>
+                        
                         <div class="info-item">
-                            <span class="label">Email:</span>
-                            <span class="value">markdarylh.allagones@gmail.com</span>
+                            <span class="label"><i class="fas fa-briefcase"></i> Experience:</span>
+                            <span class="value">1+ Year</span>
                         </div>
                         <div class="info-item">
-                            <span class="label">Experience:</span>
-                            <span class="value">1 Year/s</span>
+                            <span class="label"><i class="fas fa-graduation-cap"></i> Education:</span>
+                            <span class="value">Bachelor's Degree</span>
                         </div>
+                        <div class="info-item">
+                            <span class="label"><i class="fas fa-clock"></i> Availability:</span>
+                            <span class="value">Open to Work</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
                     </div>
                 </div>
-                <div class="about-stats">
+                <div class="about-stats fade-in">
                     <div class="stat">
                         <span class="number" data-count="5">0</span>
-                        <span class="label">Projects</span>
+                        <span class="label">Projects Completed</span>
                     </div>
                     <div class="stat">
-                        <span class="number" data-count="3">0</span>
+                        <span class="number" data-count="1">0</span>
                         <span class="label">Years Experience</span>
                     </div>
                     <div class="stat">
                         <span class="number" data-count="10">0</span>
                         <span class="label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="15">0</span>
+                        <span class="label">Coffee Cups</span>
                     </div>
                 </div>
             </div>
@@ -115,37 +176,67 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title fade-in">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
                     <h3>HTML5</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
                     <h3>CSS3</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-js-square"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
                     <h3>JavaScript</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
                     <h3>React</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-node"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-node"></i>
+                    </div>
                     <h3>Node.js</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70%"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
                     <h3>Git</h3>
-                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
                 </div>
             </div>
         </div>
@@ -154,40 +245,113 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
             <div class="projects-grid">
-                <!-- Project cards will be dynamically generated by JavaScript -->
+                <!-- Projects will be dynamically generated -->
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required />
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required />
+                    <div>
+                        <h4>Email</h4>
+                        <p id="secure-email">Loading...</p>
                     </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-github"></i>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/Mark-Daryl</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Naguilian, La Union, Philippines</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+63 912 345 6789</p>
+                    </div>
+                </div>
             </div>
+            <form id="contact-form" class="fade-in">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <i class="fas fa-user input-icon"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <i class="fas fa-envelope input-icon"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject" />
+                    <i class="fas fa-tag input-icon"></i>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <i class="fas fa-pen input-icon"></i>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Mark Daryl. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Mark Daryl S. Hidalgo</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mark Daryl S. Hidalgo. All rights reserved.</p>
+                <p class="footer-credit">Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i> and passion</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
