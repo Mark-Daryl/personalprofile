@@ -1,0 +1,7 @@
+# Disable Jekyll processing
+theme: null
+plugins: []
+markdown: none
+exclude:
+  - README.md
+  - LICENSE
